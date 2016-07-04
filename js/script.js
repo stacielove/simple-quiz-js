@@ -21,12 +21,18 @@ function submitAnswers(){
   var answers = ['b','a','d','b','d']
 
   // Check answers
-
   for (i=1; i<=total; i++){
    if(eval('q'+i)==answers[i-1]){
     score++;
     }
   }
-
+  
+  // Display results
+  var results = document.getElementById('results');
+  results.innerHTML = '<h4>You scored <span>'+score+'</span> out of <span>'+total+'</span></h4>'
   alert('You scored '+score+ ' out of ' +total);
+
+  return false;
+
+
 }
