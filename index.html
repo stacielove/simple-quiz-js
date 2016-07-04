@@ -19,15 +19,18 @@
 
   
     <div class="container">
-      <div class="page-header">
+
+      <div class="page-header text-center">
         <h1>Simple JavaScript Quiz</h1>
         <p>Test your knowledge in <strong>JavaScript Fundamentals</strong></p>
       </div>
       
         <div class="container">
-          <div id="results">
+          <div id="results" class="bg-success">
           </div>
-          <form name="quizForm" onsubmit="return submitAnswers()">
+          <div class="container">
+            <div class="col-md-12">
+          <form id="quiz" name="quizForm" onsubmit="return submitAnswers()">
             <h3>1. In which HTML element do we put in JavaScript code?</h3>
             <input type="radio" name="q1" value="a" id="q1a"> a. &lt;js&gt; <br>
             <input type="radio" name="q1" value="b" id="q1b"> b. &lt;script&gt; <br>
@@ -59,16 +62,18 @@
             <br>
             <br>
 
-            <input type="submit" value="Submit Answers">
+            <input type="submit" value="Submit Answers" class="btn btn-primary">
           
           </form>
+        </div>
+      </div>
       </div>
 
     </div>
 
 
     <footer class="footer">
-      <div class="container">
+      <div class="container text-center">
         <p class="text-muted">Copyright &copy; 2016, All Rights Reserved</p>
       </div>
     </footer>
